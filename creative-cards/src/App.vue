@@ -2,10 +2,11 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <nav-header @pageWasChanged="currentPage=$event"></nav-header>
-        <keep-alive>
-          <component :is="currentPage"></component>
-        </keep-alive>
+        <nav-header @pageWasChanged="currentPage=$event">
+          <keep-alive>
+            <component :is="currentPage"></component>
+          </keep-alive>
+        </nav-header>
       </div>
     </div>
   </div>
