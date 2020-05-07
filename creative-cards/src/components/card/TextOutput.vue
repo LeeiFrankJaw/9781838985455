@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>{{ displayText }}</p>
+    <p :style="styleObject">{{ displayText }}</p>
   </div>
 </template>
 
@@ -11,6 +11,13 @@ export default {
     'containerHeight': {
       type: Number,
       default: 200
+    }
+  },
+  computed: {
+    styleObject() {
+      return {
+        height: this.containerHeight + 'px'
+      }
     }
   }
 }
