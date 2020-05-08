@@ -1,7 +1,6 @@
 <template>
   <footer>
-    <slot>
-      <p>Footer text</p>
-    </slot>
+    <slot name="app-name"></slot>
+    <slot></slot>
   </footer>
 </template>
