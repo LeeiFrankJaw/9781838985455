@@ -7,7 +7,6 @@
       <li class="nav-item"><a class="nav-link" @click="pageSelected='cardInsideRight'">Inside Right</a></li>
       <li class="nav-item"><a class="nav-link" @click="pageSelected='cardBack'">Back</a></li>
     </ul>
-    <slot></slot>
   </div>
 </template>
 
