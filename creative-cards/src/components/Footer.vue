@@ -1,5 +1,7 @@
 <template>
   <footer>
-    <slot></slot>
+    <slot>
+      <p>Footer text</p>
+    </slot>
   </footer>
 </template>

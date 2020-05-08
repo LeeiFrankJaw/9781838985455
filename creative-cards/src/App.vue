@@ -8,7 +8,7 @@
           <component :is="currentPage"></component>
         </keep-alive>
         <cc-footer>
-          <p class="text-center">&copy; Creative Cards</p>
+          <p class="text-center">{{ appName }}</p>
           <nav>
             <ul class="nav justify-content-center">
               <li class="nav-item"><a class="nav-link">Home</a></li>
@@ -35,7 +35,8 @@ import Footer from './components/Footer.vue'
 export default {
   data() {
     return {
-      currentPage: 'cardFront'
+      currentPage: 'cardFront',
+      appName: 'Creative Cards',
     }
   },
   components: {
